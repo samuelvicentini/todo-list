@@ -1,9 +1,17 @@
+import { Header } from './components/Header'
+
+import styles from './App.module.css'
 import './global.css'
 
 function App() {
-  
+
   return (
-    <h1>Hello Word</h1>
+    <div className={styles.wrapper}>
+      <Header />
+      <main>
+        ToDo List
+      </main>
+    </div>
   )
 }
 
