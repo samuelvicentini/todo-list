@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  margin-top: calc(0px - 1.5rem - 1px);
+}
+
+.wrapper input {
+  border: 1px solid var(--gray-700);
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  margin-right: 0.5rem;
+}
+
+.wrapper input:focus {
+  border: 1px solid var(--purple-600);
+  outline: none;
+}
+
+.wrapper button {
+  background-color: var(--blue-600);
+  color: var(--gray-100);
+  border: 0;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  
+}
+
+.wrapper button:hover {
+  background-color: var(--blue-500);
+}
