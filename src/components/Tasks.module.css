@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.header span {
+  margin-left: 8px;
+  color: var(--gray-200);
+  background: var(--gray-400);
+  padding: 2px 8px;
+  border-radius: 99px;
+}
+
+.header > .tasksCreated {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--blue-500);
+}
+
+.header > .completed {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--purple-500);
+}
+
+.task {
+  display: flex;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  padding: 1rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.task > input {
+  border-radius: 50%;
+  background-color: red;
+}
+
+.task > p {
+  margin: 0 12px;
+}
+
+.task > button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+}
