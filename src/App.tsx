@@ -1,6 +1,5 @@
 import { Header } from './components/Header'
 import { InputTask } from './components/InputTask'
-import { Tasks } from './components/Tasks'
 
 import styles from './App.module.css'
 import './global.css'
@@ -12,7 +11,6 @@ function App() {
       <Header />
       <main>
         <InputTask />
-        <Tasks />
       </main>
     </div>
   )
