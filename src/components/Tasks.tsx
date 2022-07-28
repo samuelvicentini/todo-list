@@ -7,23 +7,26 @@ interface TaskProps {
     description: string
     status: boolean
   }[]
+  handleConcludeTask: (id: number) => void
+  handleDeleteTask: (id: number) => void
 }
 
-export function Tasks({task}: TaskProps) {
+export function Tasks({ task, handleConcludeTask, handleDeleteTask }: TaskProps) {
+
+
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.tasksCreated}>Tarefas Criadas <span>0</span></div>
-        <div className={styles.completed}>Concluídas <span>0 de 5</span></div>
+        <div className={styles.tasksCreated}>Tarefas Criadas <span>{task.length}</span></div>
+        <div className={styles.completed}>Concluídas <span>0 de {task.length}</span></div>
       </header>
       <main>
         {task.map(item => {
           return (
-            <div className={styles.task}>
-              <input type='checkbox' />
+            <div key={item.id} className={styles.task}>
+              <input type='checkbox' onClick={() => handleConcludeTask(item.id)} />
               <p>{item.description}</p>
-              {console.log(item.id)}
-              <button>
+              <button onClick={() => handleDeleteTask(item.id)}>
                 <Trash size={24} />
               </button>
             </div>
